@@ -9,6 +9,15 @@ from lagent.llms import (
     LMDeployServer,
 )
 
+load_dotenv()
+
+azure = dict(
+    type=GPTAPI,
+    model_type="gpt4-o",
+    key=os.environ.get("AZURE_API_KEY"),
+    api_base=os.environ.get("AZURE_API_BASE"),
+)
+
 internlm_server = dict(
     type=LMDeployServer,
     path="internlm/internlm2_5-7b-chat",

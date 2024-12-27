@@ -1,0 +1,2 @@
+Summarize the best paper from major ML conference in 2024 (NeurIPs, ICML, ICLR), and provide an overview of the trends in several popular field.
+

@@ -38,6 +38,10 @@ def _generate_references_from_graph(graph: Dict[str, dict]) -> Tuple[str, Dict[i
         if name in ["root", "response"]:
             continue
         # only search once at each node, thus the result offset is 2
+
+        print("DATA_ITEM")
+        print(name, data_item)
+
         assert data_item["memory"]["agent.memory"][2]["sender"].endswith("ActionExecutor")
         ref2url = {
             int(k): v
