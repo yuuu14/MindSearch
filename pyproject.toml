@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "mindsearch"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10.15"
+duckduckgo-search = "5.3.1b1"
+einops = "^0.8.0"
+fastapi = "^0.115.6"
+gradio = "5.7.1"
+janus = "^2.0.0"
+lagent = "0.5.0rc2"
+matplotlib = "^3.10.0"
+pydantic = "2.6.4"
+python-dotenv = "^1.0.1"
+pyvis = "^0.3.2"
+schemdraw = "^0.19"
+sse-starlette = "^2.2.1"
+termcolor = "^2.5.0"
+transformers = "4.41.0"
+uvicorn = "^0.34.0"
+tenacity = "^9.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
