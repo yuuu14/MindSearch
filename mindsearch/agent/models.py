@@ -58,7 +58,7 @@ internlm_hf = dict(
 # openai_api_base needs to fill in the complete chat api address, such as: https://api.openai.com/v1/chat/completions
 gpt4 = dict(
     type=GPTAPI,
-    model_type="gpt-4-turbo",
+    model_type=os.environ.get("OPENAI_MODEL", "gpt-4-turbo"),
     key=os.environ.get("OPENAI_API_KEY", "YOUR OPENAI API KEY"),
     api_base=os.environ.get("OPENAI_API_BASE",
                             "https://api.openai.com/v1/chat/completions"),
